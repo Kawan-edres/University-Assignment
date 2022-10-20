@@ -8,12 +8,15 @@
   </head>
   <body>
   <header>
-      <h1 class="text-display-1">WEB Design 2022 Assignment</h1>
+      <a href="index.html">
+        <img src="/Images/html.png" alt="logo" width="100px">
+      </a>
+      <h1 class="text-display-1">Kawan Idrees Mawlood </h1>
 
       <nav>
         <ul class="nav-list">
           <li class="nav-list-item">
-          <a class="nav-list-item-link" href="index.html">Home</a>
+            <a class="nav-list-item-link" href="index.html">Home</a>
           </li>
           <li class="nav-list-item">
             <a class="nav-list-item-link" href="blog.html">Blog</a>
@@ -23,9 +26,9 @@
           </li>
           <li class="nav-list-item">
            <ul>
-            <li><a href="floated-blogs.html">Floated-Blogs</a></li>
-            <li><a href="flexBox.html">FlexBox-Blogs</a></li>
-            <li><a href=""><a href="grid.html">Grid-Blogs</a></a></li>
+            <li><a href="../Layout/floated-blogs.html">Floated-Blogs</a></li>
+            <li><a href="../Layout/flexBox.html">FlexBox-Blogs</a></li>
+            <li><a href=""><a href="Layout/grid.html">Grid-Blogs</a></a></li>
            </ul>
           </li>
           <li class="nav-list-item">
@@ -38,10 +41,11 @@
       </nav>
     </header>
 
+
     <main>
       <h2>Sign Up Form</h2>
 
-      <form action="" >
+      <form action="">
         <label for="userName">Username</label><br />
         <input type="text" name="" id="userName" placeholder="Username" /><br />
         <label for="name">Full Name</label><br />
@@ -69,7 +73,7 @@
           <label for="dewey">it's private</label><br />
         </fieldset>
 
-        <label for="children">Number of Childrens</label> <br>
+        <label for="children">Number of Childrens</label> <br />
         <select name="childrens" id="children">
           <option value="">None</option>
           <option value="dog">0</option>
@@ -79,27 +83,29 @@
           <option value="spider">4</option>
           <option value="goldfish">5</option>
           <option value="goldfish">6</option>
-
         </select>
 
+        <label for="degree">Choose Your Degrees</label><br />
+        <input type="checkbox" name="" id="diploma" />
+        <label for="diploma">Diplome</label><br />
+        <input type="checkbox" name="" id="BSc" />
+        <label for="BSc">Bachelore of Scince (BSc)</label><br />
+        <input type="checkbox" name="" id="master" />
+        <label for="master">Master</label><br />
+        <input type="checkbox" name="" id="high-deploma" />
+        <label for="high-deplome">High Deplome</label><br />
+        <input type="checkbox" name="" id="MSc" />
+        <label for="MSc">Master of Scince</label><br />
 
-        <label for="degree">Choose Your Degrees</label><br>
-        <input type="checkbox" name="" id="diploma">
-        <label for="diploma">Diplome</label><br>
-        <input type="checkbox" name="" id="BSc">
-        <label for="BSc">Bachelore of Scince (BSc)</label><br>
-        <input type="checkbox" name="" id="master">
-        <label for="master">Master</label><br>
-        <input type="checkbox" name="" id="high-deploma">
-        <label for="high-deplome">High Deplome</label><br>
-        <input type="checkbox" name="" id="MSc">
-        <label for="MSc">Master of Scince</label><br>
-
-        <label for="about">About Your Self</label><br>
-        <textarea name="" id="" cols="40" rows="5" placeholder="about your self"></textarea>
-        <br>
-
-
+        <label for="about">About Your Self</label><br />
+        <textarea
+          name=""
+          id=""
+          cols="40"
+          rows="5"
+          placeholder="about your self"
+        ></textarea>
+        <br />
 
         <fieldset>
           <legend>Gender</legend>
@@ -109,25 +115,21 @@
 
           <input type="radio" id="dewey" name="drone" value="dewey" />
           <label for="dewey">Female</label><br />
-          
         </fieldset>
-
 
         <fieldset>
           <legend>Agreements</legend>
 
-          <label for="">Please Read the terms and agreements</label><br>
+          <label for="">Please Read the terms and agreements</label><br />
           <input type="radio" id="huey" name="drone" value="huey" checked />
           <label for="huey">I have read all of the terms </label><br />
 
           <input type="radio" id="dewey" name="drone" value="dewey" />
           <label for="dewey">yes I'm Agree</label><br />
-          
         </fieldset>
 
         <button type="submit">Sign Up</button>
         <button>Reset</button>
-        
       </form>
     </main>
 
