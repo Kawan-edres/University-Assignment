@@ -5,195 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Box Blog</title>
+    <link rel="stylesheet" href="/Assets/Css/flexbox.css">
+    <link rel="stylesheet" href="/Assets/Css/header&footer.css">
+
   </head>
   <body>
-    <header>
-    <a href="index.html">
-        <img src="../Images/html.png" alt="logo" width="100px">
-      </a>
-      <h1 class="text-display-1">Kawan Idrees Mawlood </h1>
+  <header class="header">
+      <div class="header-continer">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/Images/html.png" alt="logo" class="logo-img" />
+          </a>
+          <h2 style="margin-left: 20px" class="text-display-1">
+            Kawan Idrees 2022-2023
+          </h1>
+        </div>
 
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-          <a class="nav-list-item-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="../blog.html">Blog</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="../schedule.html">Schedule</a>
-          </li>
-          <li class="nav-list-item">
-            <ul>
-              <li><a href="floated-blogs.html">Floated-Blogs</a></li>
-              <li><a href="flexBox.html">FlexBox-Blogs</a></li>
-              <li>
-                <a href=""><a href="grid.html">Grid-Blogs</a></a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="../signUp.html">Sign Up</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="../signIn.html">Sign In</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="../schedule.html">Schedule</a>
+            </li>
+            <li id="drop" class="nav-list-item">
+            <a href="#" class="nav-list-item-link"> Layout Desing</a>
+
+
+              <ul class="drop-down">
+                <li>
+                  <a href="./floated-blogs.html">Floated-Blogs</a>
+                </li>
+                <li><a href="./flexBox.html">FlexBox-Blogs</a></li>
+                <li>
+                  <a href="./grid.html">Grid-Blogs</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="../signUp.html">Sign Up</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="../signIn.html">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h2>Flex Box sidabar + blog</h2>
-
-      <section>
-        <h3>Topic Lorem ipsum dolor sit amet.</h3>
-        <p>
-          By
-          <a href="https://github.com/Kawan-edres" target="_blank"
-            >Kawan Idrees</a
-          >
-          on monday 30/11/2020 12:00pm
-        </p>
-
-        <img src="../Images/home-1.png" alt="float-1" />
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-          reprehenderit expedita, quisquam tempora quam cumque in. Veritatis eos
-          dolore at numquam corrupti optio, deleniti necessitatibus cum
-          laboriosam eaque, perferendis dignissimos neque nam beatae distinctio
-          repellendus hic dolorum atque voluptate, obcaecati consequatur minus
-          facere magni? Explicabo tempore eius natus nulla laboriosam?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At ratione
-          atque quo, tenetur iste eius doloremque impedit nemo id facilis et,
-          similique dolores vel. Dolor?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates
-          temporibus repellendus libero quis velit quidem illum facilis.
-          Suscipit nisi, eaque neque officiis eligendi quidem nesciunt ad
-          consequatur dolorum vitae?
-        </p>
-      </section>
-
-      <section>
-        <h3>Topic Lorem ipsum dolor sit amet.</h3>
-        <p>
-          By
-          <a href="https://github.com/Kawan-edres" target="_blank"
-            >Kawan Idrees</a
-          >
-          on monday 30/11/2020 12:00pm
-        </p>
-
-        <img src="../Images/home-1.png" alt="float-1" />
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-          reprehenderit expedita, quisquam tempora quam cumque in. Veritatis eos
-          dolore at numquam corrupti optio, deleniti necessitatibus cum
-          laboriosam eaque, perferendis dignissimos neque nam beatae distinctio
-          repellendus hic dolorum atque voluptate, obcaecati consequatur minus
-          facere magni? Explicabo tempore eius natus nulla laboriosam?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At ratione
-          atque quo, tenetur iste eius doloremque impedit nemo id facilis et,
-          similique dolores vel. Dolor?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates
-          temporibus repellendus libero quis velit quidem illum facilis.
-          Suscipit nisi, eaque neque officiis eligendi quidem nesciunt ad
-          consequatur dolorum vitae?
-        </p>
-      </section>
-
-      <section>
-        <h3>Topic Lorem ipsum dolor sit amet.</h3>
-        <p>
-          By
-          <a href="https://github.com/Kawan-edres" target="_blank"
-            >Kawan Idrees</a
-          >
-          on monday 30/11/2020 12:00pm
-        </p>
-
-        <img src="../Images/home-1.png" alt="float-1" />
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-          reprehenderit expedita, quisquam tempora quam cumque in. Veritatis eos
-          dolore at numquam corrupti optio, deleniti necessitatibus cum
-          laboriosam eaque, perferendis dignissimos neque nam beatae distinctio
-          repellendus hic dolorum atque voluptate, obcaecati consequatur minus
-          facere magni? Explicabo tempore eius natus nulla laboriosam?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At ratione
-          atque quo, tenetur iste eius doloremque impedit nemo id facilis et,
-          similique dolores vel. Dolor?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates
-          temporibus repellendus libero quis velit quidem illum facilis.
-          Suscipit nisi, eaque neque officiis eligendi quidem nesciunt ad
-          consequatur dolorum vitae?
-        </p>
-      </section>
-
-      <aside>
-        <h3>Layout Design</h3>
+      <div class="article-content">
+        <h2 class="page-heading">Float Sidebar with Blog</h2>
+        <article class="article-content">
+          <h2>Another Title here in new page.</h2>
+          <p class="author">
+            By <a href="">Kawan Idrees</a> on Tuesday 12/8/2022, 6:00 PM
+          </p>
+          <img src="../Images/istanbul-1.jpg" class="article-image" alt="" />
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+        <article class="article-content">
+          <h2>New Title new article.</h2>
+          <p class="author">
+            By <a href="">Kawan Idrees</a> on Tuesday 12/8/2022, 6:00 PM
+          </p>
+          <img src="../Images/istanbul-2.jpg" class="article-image" alt="" />
+          <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+        <article class="article-content">
+          <h2>New Article in the page again.</h2>
+          <p class="author">
+            By <a href="">Kawan Idrees</a> on Tuesday 12/8/2020, 6:00 PM
+          </p>
+          <img src="../Images/istanbul-0.jpg" class="article-image" alt="" />
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+      </div>
+      <aside class="sidebar-section">
+        <h2>Links</h2>
         <ul>
-            <li>Layout Float with Side Nav</li>
-            <li>Flex Box Layout with Side Nav</li>
-            <li>Grid Layout With Side Nav</li>
+          <li><a href="float.html">Floated Sidebar</a></li>
+          <li><a href="flexbox.html">Flexbox Sidebar</a></li>
+          <li><a href="grid.html">Grid System Blog</a></li>
         </ul>
       </aside>
     </main>
 
+    <div class="footer-line"></div>
+
     <footer>
-      <div>
-        <h4>site map</h4>
-        <ul>
-        <li><a href="../index.html">Home</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../signUp.html">SignUp</a></li>
-          <li><a href="../signIn.html">Login</a></li> 
-        </ul>
+      <div class="footer-item">
+        <h4 class="footer-item-heading">Sitemap</h4>
+        <p class="footer-item-paragraph">
+          <a href="index.html">Home</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="blog.html">Blog</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="schedule.html">Schedule</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="signup.html">Sign up</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="signin.html">Sign In</a>
+        </p>
       </div>
-
-      <div>
-        <h4>Term and quick links</h4>
-        <ul>
-          <li>Term of usage</li>
-          <li><a href="#">Link1</a></li>
-          <li><a href="#">Link2</a></li>
-          <li><a href="#">Link3</a></li>
-        </ul>
+      <div class="footer-item">
+        <h4 class="footer-item-heading">Terms of Quick Links</h4>
+        <p class="footer-item-paragraph">
+          <a href="index.html">Term of Usage</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="blog.html">Link 1</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="schedule.html">Link 2</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="signup.html">Link 3</a>
+        </p>
       </div>
-
-      <div>
-        <h4>Address and contact</h4>
-        <ul>
-          <li>City,Governmate,Country</li>
-          <li>Phone: <a href="tel:+9647503982829">+964-750-398-28-29</a></li>
-          <li>
-            Email :<a href="mailto:kawanedres211@gmail.com"
-              >kawanedres211@gmail.com</a
-            >
-          </li>
-          <li>link 3</li>
-        </ul>
+      <div class="footer-item">
+        <h4 class="footer-item-heading">Contact info</h4>
+        <p class="footer-item-paragraph">Istunbul, Kurdistan, Turkey</p>
+        <p class="footer-item-paragraph">Phone: 07504445678</p>
+        <p class="footer-item-paragraph">Email: istanbul@gmail.com</p>
+        <br />
+        <p style="color:#9599E2">Copy Right c 2022, All rigth reserved</p>
       </div>
     </footer>
   </body>

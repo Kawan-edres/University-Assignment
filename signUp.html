@@ -5,169 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
+    <link rel="stylesheet" href="/Assets/Css/sign-up.css">
+    <link rel="stylesheet" href="/Assets/Css/header&footer.css">
+
   </head>
   <body>
-  <header>
-      <a href="index.html">
-        <img src="/Images/html.png" alt="logo" width="100px">
-      </a>
-      <h1 class="text-display-1">Kawan Idrees Mawlood </h1>
+  <header class="header">
+      <div class="header-continer">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/Images/html.png" alt="logo" class="logo-img" />
+          </a>
+          <h1 style="margin-left: 20px" class="text-display-1">
+            Kawan Idrees 2022-2023
+          </h1>
+        </div>
 
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="schedule.html">Schedule</a>
-          </li>
-          <li class="nav-list-item">
-           <ul>
-            <li><a href="../Layout/floated-blogs.html">Floated-Blogs</a></li>
-            <li><a href="../Layout/flexBox.html">FlexBox-Blogs</a></li>
-            <li><a href=""><a href="Layout/grid.html">Grid-Blogs</a></a></li>
-           </ul>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="signUp.html">Sign Up</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="signIn.html">Sign In</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="schedule.html">Schedule</a>
+            </li>
+            <li id="drop" class="nav-list-item">
+               <a href="#" class="nav-list-item-link"> Layout Desing</a>
+
+              <ul class="drop-down">
+                <li>
+                  <a href="Layout/floated-blogs.html">Floated-Blogs</a>
+                </li>
+                <li><a href="Layout/flexBox.html">FlexBox-Blogs</a></li>
+                <li>
+                <a href="Layout/grid.html">Grid-Blogs</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="signUp.html">Sign Up</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="signIn.html">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
 
+
     <main>
-      <h2>Sign Up Form</h2>
-
-      <form action="">
-        <label for="userName">Username</label><br />
-        <input type="text" name="" id="userName" placeholder="Username" /><br />
-        <label for="name">Full Name</label><br />
-        <input type="text" name="" id="name" placeholder="Full Name" /><br />
-        <label for="email">Email</label><br />
-        <input type="email" name="" id="email" /><br />
-        <label for="tel">Telephone</label><br />
-        <input type="tel" name="" id="tel" /><br />
-        <label for="password">Password</label><br />
-        <input type="password" name="" id="passwrord" /> <br />
-        <label for="dob">Date Of Birth</label> <br />
-        <input type="date" name="" id="dob" /> <br />
-        <label for="color">Profile Color</label><br />
-        <input type="color" name="" id="color" /> <br />
-
+      <h2 class="page-heading">The Sign Up Form</h2>
+      <form>
+        <label for="">Username</label>
+        <input class="user" type="text" placeholder="Username" />
+        <label for="">Full Name</label>
+        <input type="text" placeholder="Full Name" />
+        <label for="">Email</label>
+        <input type="email" placeholder="example@gmail.com" />
+        <label for="">TelePhone</label>
+        <input type="tel" placeholder="0750 398 2829" />
+        <label for="">Password</label>
+        <input type="password" placeholder="**********" />
+        <label for="">Date of Birth</label>
+        <input type="date" />
+        <label>Profile Color</label>
+        <input type="color" value="#6872AF" />
         <fieldset>
-          <legend>Marital Status</legend>
-
-          <input type="radio" id="huey" name="drone" value="huey" checked />
-          <label for="huey">Single</label><br />
-
-          <input type="radio" id="dewey" name="drone" value="dewey" />
-          <label for="dewey">Marrid</label><br />
-          <input type="radio" id="dewey" name="drone" value="dewey" />
-          <label for="dewey">it's private</label><br />
+          <legend>Martial Status</legend>
+          <input
+            class="radio-buttons"
+            type="radio"
+            id="single"
+            name="marsial status"
+            value="single"
+          />
+          <label for="married">Married</label><br />
+          <input
+            class="radio-buttons"
+            type="radio"
+            id="private"
+            name="marsial status"
+            value="private"
+          />
+          <label for="single">Single</label><br />
+          <input
+            class="radio-buttons"
+            type="radio"
+            id="married"
+            name="marsial status"
+            value="married"
+          />
+          <label for="private">It's Private</label>
         </fieldset>
+        <label for="">No. Children</label>
+        <select name="age" id="age">
+          <option value="none">None</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="+4">more...</option>
 
-        <label for="children">Number of Childrens</label> <br />
-        <select name="childrens" id="children">
-          <option value="">None</option>
-          <option value="dog">0</option>
-          <option value="cat">1</option>
-          <option value="hamster">2</option>
-          <option value="parrot">3</option>
-          <option value="spider">4</option>
-          <option value="goldfish">5</option>
-          <option value="goldfish">6</option>
         </select>
-
-        <label for="degree">Choose Your Degrees</label><br />
-        <input type="checkbox" name="" id="diploma" />
-        <label for="diploma">Diplome</label><br />
-        <input type="checkbox" name="" id="BSc" />
-        <label for="BSc">Bachelore of Scince (BSc)</label><br />
-        <input type="checkbox" name="" id="master" />
-        <label for="master">Master</label><br />
-        <input type="checkbox" name="" id="high-deploma" />
-        <label for="high-deplome">High Deplome</label><br />
-        <input type="checkbox" name="" id="MSc" />
-        <label for="MSc">Master of Scince</label><br />
-
-        <label for="about">About Your Self</label><br />
-        <textarea
-          name=""
-          id=""
-          cols="40"
-          rows="5"
-          placeholder="about your self"
-        ></textarea>
-        <br />
-
+        <label for="">Choose Your Degree</label>
+        <select
+          class="multiple-select-input"
+          multiple
+          name="degree"
+          id="degree"
+        >
+          <option value="High School">High School</option>
+          <option value="Bchelor">Bchelor</option>
+          <option value="Master">Master</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Proffessor">Proffessor</option>
+        </select>
+        <label for="">About Yourself</label>
+        <textarea placeholder="More about Yourself..." name="bio"></textarea>
+        <label for="">Upload Your CV</label>
+        <input class="file-input" type="file" placeholder="CV" />
         <fieldset>
           <legend>Gender</legend>
-
-          <input type="radio" id="huey" name="drone" value="huey" checked />
-          <label for="huey">Male</label><br />
-
-          <input type="radio" id="dewey" name="drone" value="dewey" />
-          <label for="dewey">Female</label><br />
+          <input
+            class="radio-buttons"
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+          />
+          <label for="male">Male</label><br />
+          <input
+            class="radio-buttons"
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+          />
+          <label for="female">Female</label><br />
         </fieldset>
-
         <fieldset>
-          <legend>Agreements</legend>
-
-          <label for="">Please Read the terms and agreements</label><br />
-          <input type="radio" id="huey" name="drone" value="huey" checked />
-          <label for="huey">I have read all of the terms </label><br />
-
-          <input type="radio" id="dewey" name="drone" value="dewey" />
-          <label for="dewey">yes I'm Agree</label><br />
+          <legend>Agreement</legend>
+          <input
+            class="radio-buttons"
+            type="checkbox"
+            name="agreement"
+            value="male"
+          />
+          <label for="agreement">I Have Read All the Terms.</label><br />
+          <input
+            class="radio-buttons"
+            type="checkbox"
+            name="agreement"
+            value="female"
+          />
+          <label for="agreement">Yes i agree.</label><br />
         </fieldset>
-
-        <button type="submit">Sign Up</button>
-        <button>Reset</button>
       </form>
+      <div class="control-buttons">
+        <button class="signup-button">Sign Up</button>
+        <button class="reset-button">Reset</button>
+      </div>
     </main>
 
-    <footer>
-      <div>
-        <h4>site map</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
+    <div class="footer-line"></div>
 
-          <li><a href="signUp.html">SignUp</a></li>
-          <li><a href="signIn.html">Login</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Term and quick links</h4>
-        <ul>
-          <li>Term of usage</li>
-          <li><a href="#">Link1</a></li>
-          <li><a href="#">Link2</a></li>
-          <li><a href="#">Link3</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Address and contact</h4>
-        <ul>
-          <li>City,Governmate,Country</li>
-          <li>Phone: <a href="tel:+9647503982829">+964-750-398-28-29</a></li>
-          <li>
-            Email :<a href="mailto:kawanedres211@gmail.com"
-              >kawanedres211@gmail.com</a
-            >
-          </li>
-          <li>link 3</li>
-        </ul>
-      </div>
-    </footer>
+<footer>
+  <div class="footer-item">
+    <h4 class="footer-item-heading">Sitemap</h4>
+    <p class="footer-item-paragraph">
+      <a href="index.html">Home</a>
+    </p>
+    <p class="footer-item-paragraph">
+      <a href="blog.html">Blog</a>
+    </p>
+    <p class="footer-item-paragraph">
+      <a href="schedule.html">Schedule</a>
+    </p>
+    <p class="footer-item-paragraph">
+      <a href="signup.html">Sign up</a>
+    </p>
+    <p class="footer-item-paragraph">
+      <a href="signin.html">Sign In</a>
+    </p>
+  </div>
+  <div class="footer-item">
+    <h4 class="footer-item-heading">Terms of Quick Links</h4>
+    <p class="footer-item-paragraph">
+      <a href="index.html">Term of Usage</a>
+    </p>
+    <p class="footer-item-paragraph">
+      <a href="blog.html">Link 1</a>
+    </p>
+    <p class="footer-item-paragraph">
+      <a href="schedule.html">Link 2</a>
+    </p>
+    <p class="footer-item-paragraph">
+      <a href="signup.html">Link 3</a>
+    </p>
+  </div>
+  <div class="footer-item">
+    <h4 class="footer-item-heading">Contact info</h4>
+    <p class="footer-item-paragraph">Erbil, Kurdistan, Iraq</p>
+        <p class="footer-item-paragraph">Phone: 07503982829</p>
+        <p class="footer-item-paragraph">Email: Erbil@gmail.com</p>
+    <br />
+    <p style="color:#9599E2">Copy Right c 2022, All rigth reserved</p>
+  </div>
+</footer>
   </body>
 </html>

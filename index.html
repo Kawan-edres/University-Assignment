@@ -5,137 +5,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="/Assets/Css/home.css" />
+    <link rel="stylesheet" href="/Assets/Css/header&footer.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <img src="/Images/html.png" alt="logo" width="100px">
-      </a>
-      <h1 class="text-display-1">Kawan Idrees Mawlood </h1>
+    <header class="header">
+      <div class="header-continer">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/Images/html.png" alt="logo" class="logo-img" />
+          </a>
+          <h1 style="margin-left: 20px" class="text-display-1">
+            Kawan Idrees 2022-2023
+          </h1>
+        </div>
 
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="schedule.html">Schedule</a>
-          </li>
-          <li class="nav-list-item">
-           <ul>
-            <li><a href="../Layout/floated-blogs.html">Floated-Blogs</a></li>
-            <li><a href="../Layout/flexBox.html">FlexBox-Blogs</a></li>
-            <li><a href=""><a href="Layout/grid.html">Grid-Blogs</a></a></li>
-           </ul>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="signUp.html">Sign Up</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="signIn.html">Sign In</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="schedule.html">Schedule</a>
+            </li>
+            <li id="drop" class="nav-list-item">
+               <a href="#" class="nav-list-item-link"> Layout Desing</a>
+
+              <ul class="drop-down">
+                <li>
+                  <a href="Layout/floated-blogs.html">Floated-Blogs</a>
+                </li>
+                <li><a href="Layout/flexBox.html">FlexBox-Blogs</a></li>
+                <li>
+                <a href="Layout/grid.html">Grid-Blogs</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="signUp.html">Sign Up</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="signIn.html">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="section-1">
-        <img src="../Images/home-1.png" alt="home-1" /> <br />
-        <img src="../Images/home-1.png" alt="home-2" /><br />
-        <img src="../Images/home-1.png" alt="home-3" />
-
+      <div class="cookie">
+        <div class="one">
+          <h2>This is Stripped warning using</h2>
+          <button class="close">X</button>
+        </div>
         <div>
-          <button></button>
-          <button></button>
-          <button></button>
+          Cookies Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Distinctio, vero. <a class="readmore" href="#"> read more</a>
+        </div>
+      </div>
+      <section class="carousel">
+        <div class="arrow right-arrow">
+          <img src="./Images/arrow.png" alt="" />
+        </div>
+        <div class="arrow left-arrow">
+          <img src="./Images/arrow.png" alt="" />
+        </div>
+        <div class="carousel-image"></div>
+        <div class="carousel-dots-container">
+          <div class="carousel-dots onee"></div>
+          <div class="carousel-dots"></div>
+          <div class="carousel-dots"></div>
         </div>
       </section>
 
-      <section class="section-2">
-        <div>Blogs</div>
-        <div>Seminar Schedule</div>
-        <div>SignUp</div>
-        <div>SignUp</div>
+      <section class="cards-container">
+        <div class="card blog-card"><a href="./blog.html">Blog</a></div>
+        <div class="card signOu-card"><a href="./signIn.html">Signin</a></div>
+        <div class="card schedule-card"><a href="./signIn.html">SignUp</a></div>
+        <div class="card signIn-card"><a href="./schedule.html">Schedule</a></div>
       </section>
-
-      <section>
-        <h2>Recent Articles</h2>
-        <img src="/Images/home-1.png" alt="home-3" />
-        <div>
-          <h3>Topic 1 Lorem, ipsum dolor</h3>
-          <p>
-            By
-            <a href="https://github.com/Kawan-edres" target="_blank"
-              >Kawan Idrees</a
-            >
-            on monday 30/11/2020 12:00pm
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos
-            fugit explicabo ipsam. Minus assumenda facilis tempore dolore
-            reprehenderit reiciendis necessitatibus tempora, cupiditate amet ad
-            aliquam nesciunt soluta voluptas in!
-          </p>
-        </div>
-
-        <!-- second one -->
-        <div>
-          <h3>Topic 1 Lorem, ipsum dolor</h3>
-          <p>
-            By
-            <a href="https://github.com/Kawan-edres" target="_blank"
-              >Kawan Idrees</a
-            >
-            on monday 30/11/2020 12:00pm
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos
-            fugit explicabo ipsam. Minus assumenda facilis tempore dolore
-            reprehenderit reiciendis necessitatibus tempora, cupiditate amet ad
-            aliquam nesciunt soluta voluptas in!
-          </p>
-        </div>
-
-        <img src="/Images/home-1.png" alt="home-3" />
+      <section class="articeles-container">
+        <article class="blog-article">
+          <img src="./Images/istanbul-1.jpg" class="article-image" />
+          <div class="article-content">
+            <h3 style="color: #9599e2">Topic 1 Article on the First page.</h3>
+            <p class="author">
+              By <a href="">Kawan Idrees</a> on Tuesday 15/11/2022, 6:00 PM
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+              velit dignissimos eligendi doloremque illo atque odio excepturi
+              amet laudantium, reprehenderit nulla laborum ratione eaque
+              mollitia veniam fugit, impedit modi. A expedita placeat molestias
+              ut obcaecati, corporis dicta. Ab enim minima in possimus nobis
+              inventore maxime reprehenderit dolorum, corporis, veniam nihil. Ea
+              eum quam ipsam, reprehenderit dolorem quis aperiam. Exercitationem
+              vel eaque tempore voluptates dolorum ab dolor nemo earum, quae
+              tenetur in dolores magni velit autem? Similique reprehenderit
+              quaerat doloremque ex mollitia quisquam sed explicabo repudiandae
+              ipsa dicta aspernatur, cumque soluta aut temporibus ullam amet
+              dolore aliquid deleniti quos labore? Suscipit.
+            </p>
+          </div>
+        </article>
+        <article class="blog-article">
+          <div class="article-content">
+            <h3 style="color: #9599e2">article on the first page.</h3>
+            <p class="author">
+              By <a href="">Kawan Idrees</a> on Tuesday 15/11/2022, 6:00 PM
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+              provident animi repellendus. Voluptatum, consequuntur voluptatibus
+              laboriosam labore expedita nisi quos cum deserunt error eveniet!
+             
+              
+            </p> <br>
+            <p>assumenda fugiat tempora molestiae! Suscipit voluptates deserunt
+              nisi, aperiam ad quis asperiores laborum consectetur officia
+              error, reprehenderit nihil nesciunt distinctio similique cumque
+              dolore velit iste dicta ullam id. Ex ratione tempora facilis rem
+              quas fugiat minima totam incidunt, corporis minus, nesciunt
+              mollitia odit doloremque quisquam</p>
+          </div>
+          <img src="./Images/istanbul-2.jpg" class="article-image" />
+        </article>
       </section>
     </main>
+    <div class="footer-line"></div>
 
     <footer>
-      <div>
-        <h4>site map</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="signUp.html">SignUp</a></li>
-          <li><a href="signIn.html">Login</a></li>
-        </ul>
+      <div class="footer-item">
+        <h4 class="footer-item-heading">Sitemap</h4>
+        <p class="footer-item-paragraph">
+          <a href="index.html">Home</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="blog.html">Blog</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="schedule.html">Schedule</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="signup.html">Sign up</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="signin.html">Sign In</a>
+        </p>
       </div>
-
-      <div>
-        <h4>Term and quick links</h4>
-        <ul>
-          <li>Term of usage</li>
-          <li><a href="#">Link1</a></li>
-          <li><a href="#">Link2</a></li>
-          <li><a href="#">Link3</a></li>
-        </ul>
+      <div class="footer-item">
+        <h4 class="footer-item-heading">Terms of Quick Links</h4>
+        <p class="footer-item-paragraph">
+          <a href="index.html">Term of Usage</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="blog.html">Link 1</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="schedule.html">Link 2</a>
+        </p>
+        <p class="footer-item-paragraph">
+          <a href="signup.html">Link 3</a>
+        </p>
       </div>
-
-      <div>
-        <h4>Address and contact</h4>
-        <ul>
-          <li>City,Governmate,Country</li>
-          <li>Phone: <a href="tel:+9647503982829">+964-750-398-28-29</a></li>
-          <li>
-            Email :<a href="mailto:kawanedres211@gmail.com"
-              >kawanedres211@gmail.com</a
-            >
-          </li>
-          <li>link 3</li>
-        </ul>
+      <div class="footer-item">
+        <h4 class="footer-item-heading">Contact info</h4>
+        <p class="footer-item-paragraph">Erbil, Kurdistan, Iraq</p>
+        <p class="footer-item-paragraph">Phone: 07503982829</p>
+        <p class="footer-item-paragraph">Email: Erbil@gmail.com</p>
+        <br />
+        <p style="color:#9599E2">Copy Right c 2022, All rigth reserved</p>
       </div>
     </footer>
   </body>

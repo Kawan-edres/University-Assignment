@@ -1,0 +1,184 @@
+
+
+section {
+    margin: 20px 0px;
+  }
+  
+  
+  .cookie div{
+    
+    padding: 1.5%;
+    border:  2px solid black;
+  }
+  .one{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-image: repeating-linear-gradient(45deg,#557153, #F7A4A4 2%);
+  }
+  .close{
+    padding: .5rem;
+    background: transparent;
+    cursor: pointer;
+  }
+  .close:active{
+    transform: scale(1.1);
+  }
+   .close:active .cookie {
+    display: none;
+    transform: scale(1.5);
+    visibility: hidden;
+  }
+  .readmore{
+    text-decoration: underline;
+    color: black;
+  }
+.carousel {
+    width: 100%;
+    height: 480px;
+    position: relative;
+  }
+  .carousel-image {
+    height: 92%;
+    width: 100%;
+    background-color: rebeccapurple;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(../../Images/istanbul-0.jpg);
+  }
+  .carousel-dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+  }
+  
+  .carousel-dots {
+    background-color: white;
+    height: 10px;
+    width: 40px;
+    margin: 7px 7px;
+    border-radius: 12.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .onee{
+    background-color:white;
+    opacity: 0.5;
+
+  }
+  .onee:hover{
+    opacity: 1;
+  }
+  .carousel-dots:hover {
+    background-color: #ea97ad;
+  }
+  
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50%));
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+
+  }
+  .right-arrow {
+    right: 10px;
+  }
+  .left-arrow {
+    left: 10px;
+  }
+  .left-arrow img {
+    transform: rotate(180deg);
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+  }
+  .card {
+    height: 100px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #000 solid 2px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+ transition: all .3s ease-in-out;
+
+
+  }
+  .card:hover{
+    background-image: linear-gradient(135deg, #fff 0%, #9599E2 100%);
+
+  }
+  .card:active{
+    transform: scale(.8);
+    transform: translate(4px,4px);
+  }
+  .blog-card{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+  }
+  .schedule-card{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  section h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #355070;
+    margin-bottom: 25px;
+  }
+  section article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-article {
+    margin: 40px 0px;
+  }
+  .article-image {
+    width: 49%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+  }
+  .article-content {
+    width: 49%;
+  }
+  .article-content h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .article-content a {
+    text-decoration: underline;
+  }
+  .author {
+    margin: 7px 0px;
+    font-size: 14px;
+    color: rgb(139, 139, 139);
+  }
+  

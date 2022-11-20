@@ -1,0 +1,61 @@
+.page-heading {
+  margin: 20px 0px;
+  align-self: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 50px;
+  justify-self: flex-start;
+  color: #6872AF;
+  font-weight: bold;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - (360px));
+}
+form {
+  width: 50%;
+}
+input {
+  width: 100%;
+  height: 50px;
+  border-bottom-right-radius: 7px;
+  border-top: 4px solid #6872AF;
+  border-left: 4px solid #6872AF ;
+  padding: 0 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+input:focus{
+  border: 2px solid red;
+    border-bottom: 4px solid red;
+}
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+.signup-button {
+  background-color: #6872AF;
+  border: 2px solid #355070;
+  border-bottom-right-radius: 10px !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0,.5) ;
+  color: white;
+  color: black;
+
+}
+.signup-button:active {
+ transform:  scale(.9);
+}
+
+.forgot{
+  text-decoration: underline;
+}
